@@ -2,6 +2,8 @@ $('.jsdelete').on('click', function(e){
     e.preventDefault();
     console.log("delete");
     deleteProduct($(this));
+	$('.checkoutwrapper').hide(500);
+	$('.delete-txt').show(300);
 });
 
 var deleteProduct = (function(obj) {
