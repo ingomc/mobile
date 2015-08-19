@@ -1114,7 +1114,7 @@ button[disabled]:active, button[disabled], input[type="button"][disabled]:active
     height: 22px;
     top: 1rem;
     left: 1rem;
-    background-image: url('/img/icon_info.svg');
+    background-image: url('../img/icon_info.svg');
     background-size: 100%; }
 
 .warning {
@@ -1131,7 +1131,7 @@ button[disabled]:active, button[disabled], input[type="button"][disabled]:active
     height: 22px;
     top: 1rem;
     left: 1rem;
-    background-image: url('/img/icon_warning.svg');
+    background-image: url('../img/icon_warning.svg');
     background-size: 100%; }
 
 .animated {
