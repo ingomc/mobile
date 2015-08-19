@@ -1,0 +1,11 @@
+.prize {
+	font-weight:bold;
+	& .new-prize {
+		display:block;
+		color: $alert-color;
+	}
+	& .old-prize {
+		text-decoration: line-through;
+		font-weight:normal;
+	}
+}

@@ -12,11 +12,10 @@
 
 <body>
     <div class="site-wrapper container-fluid">
-        
+
         <!-- Header Links -->
         <div class="row header-links grid-end">
-            <a href="#" style="opacity:0.5; padding-top:7px;">Herzlich Willkommen Maximilian Mustermann</a>
-            <a href="#" style="padding-top:7px;">Abmelden</a>
+            <a href="#"><img src="img/icon_user.svg" alt="Useraccount"><span>Mein Konto</span></a>
             <a href="#"><img src="img/icon_wishlist.svg" alt="Merkzettel"><span>Merkzettel</span></a>
             <a href="#"><img src="img/icon_form.svg" alt="Direktbestellformular"><span>Direkbestellen</span></a>
         </div>
@@ -39,7 +38,13 @@
             <!-- Ende Suchfeld -->
             <section class="basket col-4">
                 <div>
-                    <a href="#"><img src="img/icon_cart.svg" alt="Warenkorb"><strong>Warenkorb</strong></a>
+                    <a class="cart" href="#">
+                        <img src="img/icon_cart.svg" alt="Warenkorb">
+                        <div class="cart-count-wrapper grid-center grid-middle">
+                            <div class="cart-count">4</div>
+                        </div>
+                        <strong>Warenkorb</strong>
+                    </a>
                 </div>
             </section>
         </header>
@@ -152,7 +157,39 @@
         <!-- Content -->
         <div class="content cart">
 
+            <!-- Banner -->
+            <div class="row">
+                <div class="col-12">
+                    <!-- WYSIWYG -->
+                    <div class="salebanner" style="position: relative;overflow:hidden; background-color:#fcea10;
+                                background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+                     padding:0.5rem;">
+                     <style>
+                        .salebanner {
+                            animation-name: example;
+                            animation-duration: 4s;                            
+                        }
+                        @keyframes example {
+                            from {background-color: #ff4444;}
+                            to {background-color: #fcea10;}
+                        }
+                        .banner-animation {
+                            animation-name: example2;
+                            animation-duration: 2s;                            
+                        }
+                        @keyframes example2 {
+                            from {transform:translateX(-100%); }
+                            to {transform:translateX(0);}
+                        }
+                     </style>
+                       <p class="banner-animation" style="position:relative; color:black; text-align:center; text-shadow: 1px 1px #fff;"><strong> +++  Summersale</strong> bis 31.12.2015  +++ <strong>Bis zu 50% reduziert!</strong> +++</p>
+                    </div>
+                    <!-- WYSIWG -->
+                </div>
+            </div>
 
+
+            <!-- Banner/Hinweis -->
             <div class="row">
                 <div class="col-9">
                     <h1>Mein Warenkorb</h1>
@@ -161,8 +198,26 @@
                     <a href="#" class="btn btn-secondary"><span>Weiter zur Kasse &rsaquo;</span></a>
                 </div>
             </div>
+            <!-- ENDE Banner/Hinweis -->
 
-            <!-- Artikelliste  -->
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- WYSIWYG -->
+                    <div class="info">
+                        <p><strong>Hinweis:</strong> Bei uns wird nicht gestreikt!Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua
+                        </p>
+                    </div>
+                    <br />
+                    <div class="warning">
+                        <p><strong>Warnung:</strong> Dies ist eine Warnung!
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    </div>
+                    <!-- WYSIWYG -->
+
+                </div>
+            </div>
+
             <div class="row">
                 <div class="cart-table col-12">
                     <table id="article-list">
@@ -331,9 +386,9 @@
                                     <p>
                                         Angabe: <span style="display:inline-block; vertical-align:top;">
                                         Maximilian Mustermann <br />
-                                                    Zeile 2<br />
-                                                    Zeile 2
-                                                    </span>
+                                        Zeile 2 <br />
+                                        Zeile 2
+                                        </span>
                                     </p>
                                     <p>
                                         Schrift: Druckschrift
@@ -343,15 +398,12 @@
                                 <td class="td-attr-2 col-2"></td>
                                 <td class="td-count col-2">
                                 </td>
-                                <td class="td-price col-2"><span class="prize">+ 5,95 &euro;</span></td>
+                                <td class="td-price col-2"><span class="prize">5,95 &euro;</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <!-- Ende Artikelliste -->
-
-            <!-- Hinweise und Preisrechnung -->
             <div class="row">
                 <div class="col-6">
                     <div class="info">
@@ -380,7 +432,7 @@
                             -->
                             <tr class="row">
                                 <td class="col-9"><strong>Versandkosten</strong></td>
-                                <td class="td-price col-3">4,95 &euro;</td>
+                                <td class="td-price col-3">- 10,00 &euro;</td>
                             </tr>
                             <tr class="row added-prize">
                                 <td class="col-9"><strong>Gesamtwert:</strong></td>
@@ -390,15 +442,28 @@
                     </table>
                 </div>
             </div>
-            <!-- ENDE Hinweise und Preisrechnung -->
-
-            <!-- Button -->
             <div class="row">
                 <div class="col-3 col-offset-9" style="position:relative; overflow:hidden;">
                     <a href="#" class="btn btn-secondary"><span>Weiter zur Kasse &rsaquo;</span></a>
                 </div>
             </div>
         </div>
+
+        <!-- Banner/Hinweis -->
+        <div class="row">
+            <div class="col-12">
+
+                <!-- WYSIWYG -->
+                <div class="info">
+                    <p><strong>Hinweis:</strong> Bei uns wird nicht gestreikt!
+                    </p>
+                </div>
+                <!-- WYSIWYG -->
+
+            </div>
+        </div>
+        <!-- Ende Banner/Hinweis -->
+
 
         <!-- Direktbestellformular -->
 
@@ -415,6 +480,16 @@
         </div>
         <!-- Ende Direktbestellformular -->
 
+        <!-- Banner -->
+
+        <div class="row">
+             <div class="col-12">
+                 <!-- WYSIWYG -->
+                    <img src="http://lorempixel.com/1000/200/city/" />
+                 <!-- Ende WYSIWYG -->
+             </div>
+        </div>
+        <!-- Ende Banner -->
 
     </div>
     <footer id="footer">

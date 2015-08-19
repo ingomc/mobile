@@ -1,0 +1,17 @@
+.footer-short {
+ & footer {
+   background-color: $light-grey;
+ }
+ & h4 {
+   text-transform: uppercase;
+ }
+}
+
+.meta-navigation {
+  & .meta-links {
+    & a {
+      padding:1em;
+      display: inline-block;
+    }
+  }
+}

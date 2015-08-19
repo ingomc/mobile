@@ -1,373 +1,557 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>JAKO-O Online Shop - Kindermode, Babymode, Spielzeug und Kindermöbel</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <link rel="stylesheet" href="css/idangerous.swiper.css">
-<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    <!-- SWIPER CSS -->
-    <meta name="description" content="JAKO-O Online-Shop: Kindermode, Babymode, Spielzeug und Kindermöbel - Kindersachen mit Köpfchen! ★ Tolle Produkte für Kinder ★ Top Qualität" />
-    <style type="text/css">
-    @import"css/foundation.css";
-    </style>
-    <style type="text/css">
-    @import"css/normalize.css";
-    </style>
-    <style type="text/css">
-    @import"css/mobile.css";
-    </style>
+	<title>FIT-Z Klickdummy</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Demo project">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<style type="text/css">
+		img {
+			max-width: 100%;
+		}
+		.site-wrapper {
+			width:100%;
+			margin:0 auto;
+			min-width: 740px;
+		}
+	</style>
 </head>
-<!--[if IE 7]>
-<body class="ie7 ieFix noJS ">
-<![endif]-->
-<!--[if IE 8]>
-<body class="ie8 ieFix noJS ">
-<![endif]-->
-<!--[if (gt IE 8)|!(IE)]>
-    <!-->
+<body>
+	<div class="site-wrapper container-fluid">
 
-<body class="noJS ">
-    <!--<![endif]-->
+        <!-- Header Links -->
+        <div class="row header-links grid-end">
+            <a href="#"><img src="img/icon_user.svg" alt="Useraccount"><span>Mein Konto</span></a>
+            <a href="#"><img src="img/icon_wishlist.svg" alt="Merkzettel"><span>Merkzettel</span></a>
+            <a href="#"><img src="img/icon_form.svg" alt="Direktbestellformular"><span>Direkbestellen</span></a>
+        </div>
+        <!-- Ende Header Links -->
 
-    <div class="siteWrapper home">
-        <header>
-            <h1>
-                <a href="index.html">
-                    <img src="img/logo.png" itemprop="logo" />
-                    <span class="hide">JAKO-O Online-Shop</span>
-                </a>
-            </h1>
-            <nav id="menuicons">
-                <ul>
-                    <li>
-                        <a id="menubutton" href="#mainnav" class="nav icon-start">
-                            <span class="hide">Hauptmenü</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="icon-suche" href="#inputsuche" class="nav icon-suche">
-                            <span class="hide">Suche</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="merkzettel.html" class="nav icon-merkzettel">
-                            <span class="hide">Merkzettel</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="warenkorb.html" class="nav icon-warenkorb">
-                            <span class="hide">Warenkorb</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <!-- Header -->
+        <header id="header" class="row grid-between grid-middle">
+            <!-- Logo -->
+            <section id="logo" class="col-4">
+                <a href="#"><img src="img/logo.png" alt="FIT-Z - Mode, Wissen, Freizeit ...f&uuml;r Kids von 8 bis 14 Jahren" width="200"></a>
+            </section>
+            <!-- Ende Logo -->
+            <!-- Suchfeld -->
+            <section id="search" class="col-4">
+                <form class="search-wrapper">
+                    <input type="search" placeholder="Was möchten Sie finden ..." />
+                    <button type="submit" name="action" value="0"><span class="hide">finden</span><img src="img/icon_search.svg" alt=""></button>
+                </form>
+            </section>
+            <!-- Ende Suchfeld -->
+            <section class="basket col-4">
+                <div>
+                    <a class="cart" href="#">
+	            		<img src="img/icon_cart.svg" alt="Warenkorb">
+	            		<div class="cart-count-wrapper grid-center grid-middle">
+	            			<div class="cart-count">42</div>
+	            		</div>
+	            		<strong>Warenkorb</strong>
+	            	</a>
+                </div>
+            </section>
         </header>
-        <section class="suche">
-            <input id="inputsuche" type="search" name="search" placeholder="Was möchten Sie finden?">
-        </section>
-        <section class="homeSlider">
-            <div class="swiper-container cf">
-                <div class="swiper-wrapper cf" >
-                    <div class="swiper-slide">
-                        <a href="pds.html">
-                            <img src="http://www.jako-o.de/medias/sys_master/hbb/he8/8834552528926.jpg" />
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="pds.html">
-                            <img src="http://www.jako-o.de/medias/sys_master/hb7/he8/8834552397854.jpg" />
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="pds.html">
-                            <img src="http://www.jako-o.de/medias/sys_master/hbb/h06/8824066768926.jpg" width="800" height="270">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="pagination"></div>
-        </section>
-        <section id="mainnav">
-            <nav>
-                <h2 class="modul-h1">Alle Kategorien:</h2>
-                <ul class="level1">
-                    <li>
-                        <span class="menuarrow">Kindermode</span>
-                        <ul class="level2">
-                            <li><a href="pue.html">JAKO-O Mädchen Gr. 92-158</a>
-                            </li>
-                            <li><a href="pue.html">JAKO-O Jungen Gr. 92-158</a>
-                            </li>
-                            <li><a href="pue.html">FIT-Z Mädchen Gr. 140-182</a>
-                            </li>
-                            <li><a href="pue.html">FIT-Z Jungen Gr. 140-182</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menuarrow">Spielzeug</span>
-                        <ul class="level2">
-                            <li><a href="pue.html">Kinder-Spielzeug</a>
-                            </li>
-                            <li><a href="pue.html">Spiele</a>
-                            </li>
-                            <li><a href="pue.html">Spielzeug für Draußen</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menuarrow">Baby</span>
-                        <ul class="level2">
-                            <li><a href="pue.html">Baby-Mode ab Gr. 56/62</a>
-                            </li>
-                            <li><a href="pue.html">Baby-Spielzeug</a>
-                            </li>
-                            <li><a href="pue.html">Praktisches fürs Baby</a>
-                            </li>
-                            <li><a href="pue.html">Schwangerschaftsmode</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menuarrow">Sport & Bewegung</span>
-                        <ul class="level2">
-                            <li><a href="pue.html">Kinder-Sportgeräte</a>
-                            </li>
-                            <li><a href="pue.html">Kinder-Fahrzeuge</a>
-                            </li>
-                            <li><a href="pue.html">Sportarten</a>
-                            </li>
-                            <li><a href="pue.html">Sportmode</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menuarrow">Kinderzimmer</span>
-                        <ul class="level2">
-                            <li><a href="pue.html">Kinder-Möbel</a>
-                            </li>
-                            <li><a href="pue.html">Möbelserien</a>
-                            </li>
-                            <li><a href="pue.html">Heimtextil</a>
-                            </li>
-                            <li><a href="pue.html">Deko & Accessoires</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menuarrow">Kinderfest</span>
-                        <ul class="level2">
-                            <li><a href="pue.html">Partyartikel</a>
-                            </li>
-                            <li><a href="pue.html">Themenpartys</a>
-                            </li>
-                            <li><a href="pue.html">Partybeschäftigung</a>
-                            </li>
-                            <li><a href="pue.html">Mitgebsel</a>
-                            </li>
-                            <li><a href="pue.html">personalisierte Geschenke</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menuarrow">Praktisches</span>
-                        <ul class="level2">
-                            <li><a href="pue.html">Haushalt</a>
-                            </li>
-                            <li><a href="pue.html">Familie unterwegs</a>
-                            </li>
-                            <li><a href="pue.html">Schulorganisation</a>
-                            </li>
-                            <li><a href="pue.html">Garten & Strand</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menuarrow">Basteln</span>
-                        <ul class="level2">
-                            <li><a href="pue.html">Saisonales Basteln</a>
-                            </li>
-                            <li><a href="pue.html">Bastelwerkzeug & mehr</a>
-                            </li>
-                            <li><a href="pue.html">Bastelbedarf</a>
-                            </li>
-                            <li><a href="pue.html">Bastelsets nach Schwierigkeitsgrad</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menuarrow">Medien</span>
-                        <ul class="level2">
-                            <li><a href="pue.html">Unterhaltungsbücher</a>
-                            </li>
-                            <li><a href="pue.html">Sachbücher</a>
-                            </li>
-                            <li><a href="pue.html">Lernmaterialien</a>
-                            </li>
-                            <li><a href="pue.html">CDs, DVDs & Multimedia</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="menuarrow">% SALE %</span>
-                         <ul class="level2">
-                            <li><a href="pue.html">Kindermode</a>
-                            </li>
-                            <li><a href="pue.html">Spielzeug & Praktisches</a>
-                            </li>
-                            <li><a href="pue.html">Baby</a>
-                            </li>
-                            <li><a href="pue.html">HABA Outlet</a>
-                            </li>
-                            <li><a href="pue.html">Schwangerschaftsmode</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        <section class="homeSlider2">
-            <h2>Unsere Bestseller</h2>
-            <div class="swiper-container1 swiper-container2 cf">
-                <div class="swiper-wrapper cf">
-                    <div class="swiper-slide">
-                        <div class="bestseller-box">
-                            <a href="pds.html">
-                                <img src="http://www.jako-o.de/medias/sys_master/ha9/hc7/8829980147742.jpg" alt="" width="200">
-                                <p>
-                                    <strong>Kinder-Hose</strong>
-                                </p>
-                                <strike>24,95 €</strike>
-                                <div class="price txt-red">19,95 €</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="bestseller-box">
-                            <a href="pds.html">
-                                <img src="http://www.jako-o.de/medias/sys_master/hb1/h67/8829175103518.jpg" alt="" width="200">
-                                <p>
-                                    <strong>Outdoor-Rucksack <br />JAKO-O groß</strong>
-                                </p>
-                                <div class="price">29,95 €</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="bestseller-box">
-                            <a href="pds.html">
-                                <img src="http://www.jako-o.de/medias/sys_master/hdd/he6/8825946931230.jpg" alt="" width="200">
-                                <p>
-                                    <strong>Kinder-Leder-Halbschuh JAKO-O zum Kletten</strong>
-                                </p>
-                                <div class="price">39,95 €</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="bestseller-box">
-                            <a href="pds.html">
-                                <img src="http://www.jako-o.de/medias/sys_master/8799625084958.jpg" alt="" width="200">
-                                <p>
-                                    <strong>Walkie-Talkie Latitude, 2er-Set</strong>
-                                </p>
-                                <div class="price">39,95 €</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="bestseller-box">
-                        <a href="pds.html">
-                            <img src="http://www.jako-o.de/medias/sys_master/8802501263390.jpg" alt="" width="200">
-                            <p>
-                                <strong>Schrank-Trolley JAKO-O</strong>
-                            </p>
-                            <div class="price">99,95 €</div>
-                        </a>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pagination"></div>
-        </section>
-        <footer id="footer">
-            <div id="to-top"><a href="#" title="Zum Seitenanfang">Zum Seitenanfang</a>
-            </div>
-            <div class="footer-wrapper">
-                <h2>Service:</h2>
-                <p>Bereits Kunde? <a href="#">Hier anmelden &raquo;</a>
-                </p>
-                <nav>
-                    <ul id="footer-nav">
-                        <li>
-                            <span class="menuarrow"><a href="#">Mein JAKO-O</a>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="menuarrow"><a href="#">Filialen</a>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="menuarrow"><a href="#">Blätterkatalog + Katalog anfordern</a>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="menuarrow"><a href="#">Rückgabebelehrung</a>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="menuarrow"><a href="#">JAKO-O PC-Ansicht</a>
-                            </span>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="socialmedia">
-                    <li>
-                        <a href="#" class="icon-fb">
-                            <span class="hide">Facebook</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-g">
-                            <span class="hide">Google+</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-yt">
-                            <span class="hide">YouTube</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-p">
-                            <span class="hide">Pinterest</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <section class="subfooter">
-            <ul class="metafooter">
-                <li><a href="#">Unsere AGBs</a>
-                </li>
-                <li><a href="#">Datenschutz</a>
-                </li>
-                <li><a href="#">Kontakt</a>
-                </li>
-                <li><a href="#">Impressum</a>
-                </li>
-            </ul>
-            <p>© 2014 JAKO-O</p>
-        </section>
-    </div>
-    <script src="js/jquery-1.10.1.min.js"></script>
-    <script src="js/idangerous.swiper-2.4.min.js"></script>
-    <script src="js/main.js"></script>
+        <!-- Ende Header -->
+
+		<!-- Hauptnavigation -->
+		<section id="main-nav" class="row grid-center grid-middle">
+			<nav>
+				<ul class="row grid-center grid-middle level1">
+				    <li class="menu-item"><a href="#">Mädchen-Mode</a>
+						<div class="level2 girls animated fadeInDown">
+							<div class="row grid-start">
+								<div class="col-8">
+									<nav>
+										<h2 class="flyout-headline">Mädchen-Mode:</h2>
+										<a class="flyout-headline-link" href="#">Alles anzeigen</a>
+										<ul class="row ">
+											<span class="col-6 p0">
+												<li><a href="#">Oberteile</a></li>
+												<li><a href="#">Hosen</a></li>
+												<li><a href="#">Schule &amp; Lernen</a></li>
+												<li><a href="#">Kleider &amp; R&ouml;cke</a></li>
+												<li><a href="#">Basics</a></li>
+												<li><a href="#">Jacken &amp; Cardigans</a></li>
+												<li><a href="#">Festliche Mode</a></li>
+											</span>
+											<span class="col-6 p0">
+												<li><a href="#">Bademode</a></li>
+												<li><a href="#">Funktions- &amp; Sportkleidung</a></li>
+												<li><a href="#">Wäsche</a></li>
+												<li><a href="#">Schuhe</a></li>
+												<li><a href="#">Accessoires</a></li>
+												<li><a href="#">Marken</a></li>
+												<li><a href="#">Wintersport</a></li>
+											</span>
+										</ul>
+									</nav>
+								</div>
+								<nav class="col-4 service">
+									<h2>FIT-Z Service:</h2>
+									<ul>
+										<li><a href="#">Katalog</a></li>
+										<li><a href="#">Newsletteranmeldung</a></li>
+										<li><a href="#">Service</a></li>
+										<li><a href="#">Seminare</a></li>
+										<li><a href="#">&Uuml;ber uns</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+				    </li>
+				    <li class="menu-item"><a href="#">Jungen-Mode</a></li>
+				    <li class="menu-item"><a href="#">Sommer-Mode</a></li>
+				    <li class="menu-item"><a href="#">Made by FIT-Z</a></li>
+				    <li class="menu-item"><a href="#">Weitere Kategorien</a>
+						<div class="level2 other-categories animated fadeInDown">
+							<div class="row grid-start">
+								<div class="col-8">
+									<nav>
+										<h2>Kategorien</h2>
+										<ul class="row ">
+											<span class="col-6 p0">
+												<li><a href="#">Sport &amp; Bewegung</a></li>
+												<li><a href="#">Freizeit &amp; Reise</a></li>
+												<li><a href="#">Schule &amp; Lernen</a></li>
+												<li><a href="#">Jugendzimmer</a></li>
+											</span>
+											<span class="col-6 p0">
+												<li><a href="#">Party &amp; Geschenke</a></li>
+												<li><a href="#">B&uuml;cher &amp; mehr</a></li>
+												<li><a href="#">Kreative Hobbys</a></li>
+												<li><a href="#">Spiele &amp; Puzzle</a></li>
+											</span>
+										</ul>
+									</nav>
+									<nav>
+										<h2>Seminare:</h2>
+										<ul class="row">
+											<span class="col-6 p0">
+												<li><a href="#">Styling-Seminar</a></li>
+												<li><a href="#">Gern-Lern-Seminar</a></li>
+											</span>
+											<span class="col-6 p0">
+												<li><a href="#">Rhetorik-Seminar</a></li>
+												<li><a href="#">Motivations-Seminar</a></li>
+											</span>
+										</ul>
+									</nav>
+								</div>
+								<nav class="col-4 service">
+									<h2>FIT-Z Service:</h2>
+									<ul>
+										<li><a href="#">Katalog</a></li>
+										<li><a href="#">Newsletteranmeldung</a></li>
+										<li><a href="#">Service</a></li>
+										<li><a href="#">Seminare</a></li>
+										<li><a href="#">&Uuml;ber uns</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+				    </li>
+				    <li class="menu-item"><a href="#" class="txt-red">% Sale % </a></li>
+				</ul>
+			</nav>
+		</section>
+		<!-- Ende Hauptnavigation -->
+
+		<!-- Breadcrumb -->
+
+		<!-- ENDE Breadcrumb -->
+		<style>
+			.index-overfiew  a {
+				margin:0.5rem;
+				display:block;
+			}
+		</style>
+		<div class="row">
+			<div class="col-12">
+			<h1>Seitenübersicht</h1>
+			</div>
+		</div>
+
+		<div class="row index-overfiew">
+			<div class="col-6">
+				<h2>Warenkorb und Checkout</h2>
+				<a href="warenkorb.html" class="btn col-9">Warenkorb &rsaquo;</a>
+				<a href="warenkorb_banner.html" class="btn col-9">Warenkorb mit Banner &rsaquo;</a>
+				<a href="checkout_login.html" class="btn col-9">Login &rsaquo;</a>
+				<a href="checkout_payment.html" class="btn col-9">Zahlungsart &rsaquo;</a>
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<h1>Grid</h1>
+		</div>
+		<div class="row">
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-1</div>
+			<div class="col-1">col-1</div>
+		</div>
+		<div class="row">
+			<h2>Alle Spalten</h2>
+		</div>
+		<div class="row text-center">
+			<div class="col-1">col-1</div>
+			<div class="col-11">col-11</div>
+		</div>
+		<div class="row">
+			<div class="col-2">col-2 asd sad asd ad ad ad ad ada sd asdas dasd asd asdad as d</div>
+			<div class="col-10">col-10</div>
+		</div>
+		<div class="row">
+			<div class="col-3">col-3</div>
+			<div class="col-9">col-9</div>
+		</div>
+		<div class="row">
+			<div class="col-4">col-4</div>
+			<div class="col-8">col-8</div>
+		</div>
+		<div class="row">
+			<div class="col-5">col-5</div>
+			<div class="col-7">col-7</div>
+		</div>
+		<div class="row">
+			<div class="col-6">col-6</div>
+			<div class="col-6">col-6</div>
+		</div>
+		<div class="row">
+			<div class="col-7">col-7</div>
+			<div class="col-5">col-5</div>
+		</div>
+		<div class="row">
+			<div class="col-8">col-8</div>
+			<div class="col-4">col-4</div>
+		</div>
+		<div class="row">
+			<div class="col-9">col-9</div>
+			<div class="col-3">col-3</div>
+		</div>
+		<div class="row">
+			<div class="col-10">col-10</div>
+			<div class="col-2">col-2</div>
+		</div>
+		<div class="row">
+			<div class="col-11">col-11</div>
+			<div class="col-1">col-1</div>
+		</div>
+		<div class="row">
+			<div class="col-12">col-12</div>
+		</div>
+		<div class="row">
+			<h2>Offset</h2>
+		</div>
+		<div class="row text-center">
+			<div class="col-11 col-offset-1">col-11 col-offset-1</div>
+		</div>
+		<div class="row">
+			<div class="col-10 col-offset-2">col-10 col-offset-2</div>
+		</div>
+		<div class="row">
+			<div class="col-9 col-offset-3">col-9 col-offset-3</div>
+		</div>
+		<div class="row">
+			<div class="col-8 col-offset-4">col-8 col-offset-4</div>
+		</div>
+		<div class="row">
+			<div class="col-7 col-offset-5">col-7 col-offset-5</div>
+		</div>
+		<div class="row">
+			<div class="col-6 col-offset-6">col-6 col-offset-6</div>
+		</div>
+		<div class="row">
+			<div class="col-5 col-offset-7">col-5 col-offset-7</div>
+		</div>
+		<div class="row">
+			<div class="col-4 col-offset-8">col-4 col-offset-8</div>
+		</div>
+		<div class="row">
+			<div class="col-3 col-offset-9">col-3 col-offset-9</div>
+		</div>
+		<div class="row">
+			<div class="col-2 col-offset-10">col-2 col-offset-10</div>
+		</div>
+		<div class="row">
+			<div class="col-1 col-offset-11">col-1 col- offset - 11</div>
+		</div>
+		<div class="row">
+			<h2>Sidebar Left</h2>
+		</div>
+		<div class="row text-center">
+			<div class="col-3 grid-inner">
+				<div class="row">
+					<div class="col-12">12</div>
+					<ul>
+						<li>Kategorie 1</li>
+						<li>Kategorie 2</li>
+						<li>Kategorie 3</li>
+						<li>Kategorie 4</li>
+					</ul>
+				</div>
+				<div class="row">
+					<div class="col-12">12</div>
+				</div>
+				<div class="row">
+					<div class="col-3">3</div>
+					<div class="col-9">9</div>
+				</div>
+			</div>
+			<div class="col-9 grid-inner">
+				<div class="row">
+					<div class="col-1">col-1</div>
+					<div class="col-11">col-11</div>
+				</div>
+				<div class="row">
+					<div class="col-4">col-4</div>
+					<div class="col-8">col-8</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h2>Content</h2>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<h1>Migration</h1>
+				<h2>Migration</h2>
+				<h3>Migration</h3>
+				<h4>Migration</h4>
+				<h5>Migration</h5>
+
+			<div class="row">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="row">
+				<p class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p class="col-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+			</blockquote>
+
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+				<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+			</blockquote>
+			<blockquote class="blockquote-reverse">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+				<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+			</blockquote>
+			<ul>
+				<li>liste</li>
+				<li>liste</li>
+				<li>liste</li>
+			</ul>
+			<ol>
+				<li>liste</li>
+				<li>liste</li>
+				<li>liste</li>
+			</ol>
+			<ul class="list-unstyled">
+				<li>liste</li>
+				<li>liste</li>
+				<li>liste</li>
+			</ul>
+			<dl>
+				<dt>Erklärungstitle</dt>
+				<dd>Erklärungstext und Lorem ipsum blablalbabla</dd>
+			</dl>
+
+			<input type="text" class="form-control" placeholder="Text input">
+			<textarea class="form-control" rows="3"></textarea>
+
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="">
+					Option one is this and that&mdash;be sure to include why it's great
+				</label>
+			</div>
+			<div class="checkbox disabled">
+				<label>
+					<input type="checkbox" value="" disabled>
+					Option two is disabled
+				</label>
+			</div>
+
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+					Option one is this and that&mdash;be sure to include why it's great
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+					Option two can be something else and selecting it will deselect option one
+				</label>
+			</div>
+			<div class="radio disabled">
+				<label>
+					<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+					Option three is disabled
+				</label>
+			</div>
+			<label class="checkbox-inline">
+				<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+			</label>
+			<label class="checkbox-inline">
+				<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+			</label>
+			<label class="checkbox-inline">
+				<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+			</label>
+
+			<label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+			</label>
+			<select class="form-control">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+			<div class="form-group has-success">
+				<label class="control-label" for="inputSuccess1">Input with success</label>
+				<input type="text" class="form-control" id="inputSuccess1">
+			</div>
+			<div class="form-group has-warning">
+				<label class="control-label" for="inputWarning1">Input with warning</label>
+				<input type="text" class="form-control" id="inputWarning1">
+			</div>
+			<div class="form-group has-error">
+				<label class="control-label" for="inputError1">Input with error</label>
+				<input type="text" class="form-control" id="inputError1">
+			</div>
+			<div class="has-success">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="checkboxSuccess" value="option1">
+						Checkbox with success
+					</label>
+				</div>
+			</div>
+			<div class="has-warning">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="checkboxWarning" value="option1">
+						Checkbox with warning
+					</label>
+				</div>
+			</div>
+			<div class="has-error">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" id="checkboxError" value="option1">
+						Checkbox with error
+					</label>
+				</div>
+			</div>
+			<div class="form-group has-success has-feedback">
+				<label class="control-label" for="inputSuccess2">Input with success</label>
+				<input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+				<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+				<span id="inputSuccess2Status" class="sr-only">(success)</span>
+			</div>
+			<div class="form-group has-warning has-feedback">
+				<label class="control-label" for="inputWarning2">Input with warning</label>
+				<input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+				<span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+				<span id="inputWarning2Status" class="sr-only">(warning)</span>
+			</div>
+			<div class="form-group has-error has-feedback">
+				<label class="control-label" for="inputError2">Input with error</label>
+				<input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+				<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+				<span id="inputError2Status" class="sr-only">(error)</span>
+			</div>
+			<div class="form-group has-success has-feedback">
+				<label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+				<div class="input-group">
+					<span class="input-group-addon">@</span>
+					<input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+				</div>
+				<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+				<span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+			</div>
+			<h2> Buttons </h2>
+			<h3 id="buttons">Links</h3>
+			<a class="btn btn-default btn-primary col-3" href="#buttons" role="button">Link ›</a>
+			<a class="btn btn-default btn-secondary col-3" href="#buttons" role="button">Link</a>
+			<a class="btn btn-default btn-primary btn-outline col-3" href="#buttons" role="button">Link</a>
+			<a class="btn btn-default btn-secondary btn-outline col-3" href="#buttons" role="button">Link</a>
+			<h3>Button Input</h3>
+			<button class="btn btn-default col-2" type="submit">Button</button>
+			<button class="btn btn-default col-2" type="submit" disabled>Button disabled</button>
+			<input class="btn btn-default col-4" type="button" value="Input">
+			<input class="btn btn-default" type="submit" value="Submit">
+			<p>
+				<button type="button" class="btn btn-primary btn-lg">Large button</button>
+				<button type="button" class="btn btn-default btn-lg">Large button</button>
+				<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+			</p>
+			<p>
+				<button type="button" class="btn btn-primary">Primary button</button>
+				<button type="button" class="btn btn-default">Default button</button>
+				<button type="button" class="btn btn-secondary">Default button</button>
+			</p>
+			<p>
+				<button type="button" class="btn btn-primary btn-sm">Small button</button>
+				<button type="button" class="btn btn-default btn-sm">Small button</button>
+				<button type="button" class="btn btn-secondary btn-sm">Small button</button>
+			</p>
+			<p>
+				<button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+				<button type="button" class="btn btn-default btn-xs">Extra small button</button>
+				<button type="button" class="btn btn-secondary btn-xs">Extra small button</button>
+				<button type="button" class="btn btn-secondary btn-xs" disabled>Extra small button disabled</button>
+			</p>
+			<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+			<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+		</div>
+	</div>
+</div>
 
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </html>

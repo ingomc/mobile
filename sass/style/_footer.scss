@@ -1,0 +1,46 @@
+#footer {
+	padding:2rem 0;
+	& .row {
+		margin:0 1rem;
+	}
+	& .custom-footer-content {
+		background-color: $light-grey;
+	}
+	& .meta-navigation {
+		& li {
+			list-style-type:none;
+		}
+		& a {
+			padding:1rem;
+		}
+	}
+	.footer-h {
+		text-transform: uppercase;
+		font-weight: bold;
+		padding-bottom:0.5rem;
+	}
+	p {
+		padding-bottom:0.5rem;
+	}
+	& .copyright {
+		& a {
+			display:inline-block;
+		}
+	}
+	.nl-wrapper {
+		position:relative;
+		& input {
+			width:100%;
+		}
+		& button {
+			position:absolute;
+			top:0;
+			right:0;
+			height:100%;
+			width:2.5rem;
+			background-color: $primary-color;
+			color:white;
+			border:none;
+		}
+	}
+}

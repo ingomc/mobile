@@ -1,0 +1,188 @@
+
+/*
+  Variablen definieren
+*/
+$grid-columns: 12; /* Anzahl der Spalten */
+$grid-width: 100%;
+$grid-gutter: 1rem; /* Spacing um Spalten */
+$grid-max-width: 76rem; /* 1216px */
+$grid-min-width: 52rem;
+
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $grid-max-width;
+  min-width: $grid-min-width;
+}
+
+.row {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.row.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.col.reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+%col-basics {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding:$grid-gutter;
+
+}
+
+@for $i from 1 to $grid-columns + 1 {
+  .col-#{$i} { @extend %col-basics; }
+}
+
+@for $i from 1 to $grid-columns + 1 {
+  .col-offset-#{$i} { @extend %col-basics; }
+}
+
+/* Breiten der einzelnen Spalten berechnen */
+@mixin calc-column($grid-column-width) {
+  -webkit-flex-basis: $grid-column-width;
+  -ms-flex-preferred-size: $grid-column-width;
+  flex-basis: $grid-column-width;
+  max-width: $grid-column-width;
+}
+@for $i from 1 to $grid-columns + 1 {
+  .col-#{$i} {
+      @include calc-column( $grid-column-width: $grid-width / $grid-columns * $i );
+    }
+}
+
+/* Breiten der Offsetspalten berechnen */
+@mixin calc-column($grid-offset) {
+  margin-left: $grid-offset;
+}
+@for $i from 1 to $grid-columns + 1 {
+  .col-offset-#{$i} {
+      @include calc-column( $grid-offset: $grid-width / $grid-columns * $i );
+    }
+}
+
+/*  innerer Container ohne Gutter */
+.grid-inner {
+  padding:0;
+}
+/*  Links, Mittig, Rechts */
+.grid-start {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.grid-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid-end {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+/*  Oben, Mittig, Unten */
+.grid-top {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.grid-middle {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.grid-bottom {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+/*  Aufteilung: */
+.grid-around {  /*  gleichmaeßig außenrum */
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.grid-between { /*  nur dazwischen */
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.grid-first { /*  Als erstes Element erzwingen */
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.grid-last { /*  Als letztes Element erzwingen */
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
