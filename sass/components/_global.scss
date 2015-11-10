@@ -86,12 +86,12 @@ $base-line-height: 150% !default;
   clip: auto;
 }
 
-%box-shadow-standard { 
+%box-shadow-standard {
     -webkit-box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.75);
 }
-%box-shadow-quickview { 
+%box-shadow-quickview {
     -webkit-box-shadow: 0px -4px 10px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -4px 10px -4px rgba(0,0,0,0.75);
     box-shadow: 0px -4px 10px -4px rgba(0,0,0,0.75);
@@ -121,7 +121,7 @@ $opposite-direction: right !default;
   $opposite-direction: left;
 }
 // We use these as default colors throughout
-$primary-color: #11829e !default;
+$primary-color: #00a19a !default;
 $secondary-color: #42464d !default;
 $alert-color: #FF4444 !default;
 $success-color: #a5bf00 !default;
@@ -177,8 +177,8 @@ $column-gutter: rem-calc(30) !default;
     html,
     body { font-size: $base-font-size;
         height:auto!important;
-        
-        @media only screen 
+
+        @media only screen
           and (max-width: 950px)  {
             font-size:$base-font-size*0.9;
           }
