@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Warenkorb - FIT-Z Klickdummy</title>
+    <title>Qiero - für klasse Frauen</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="Demo project">
@@ -12,7 +12,7 @@
 
 <body>
     <div class="site-wrapper container-fluid">
-        
+
         <!-- Header Links -->
         <div class="row header-links grid-end">
             <a href="#" style="opacity:0.5; padding-top:7px;">Herzlich Willkommen Maximilian Mustermann</a>
@@ -21,7 +21,7 @@
             <a href="#"><img src="img/icon_form.svg" alt="Direktbestellformular"><span>Direkbestellen</span></a>
         </div>
         <!-- Ende Header Links -->
-        
+
         <!-- Header -->
         <header id="header" class="row grid-between grid-middle">
             <!-- Logo -->
@@ -34,17 +34,17 @@
                 <form class="search-wrapper">
                     <input type="search" placeholder="Was möchten Sie finden ..." />
                     <button type="submit" name="action" value="0"><span class="hide">finden</span><img src="img/icon_search.svg" alt=""></button>
-                </form>         
+                </form>
             </section>
             <!-- Ende Suchfeld -->
             <section class="basket col-4">
                 <div>
-                    <a href="#"><img src="img/icon_cart.svg" alt="Warenkorb"><strong>Warenkorb</strong></a>
+                    <a href="warenkorb.html"><img src="img/icon_cart.svg" alt="Warenkorb"><strong>Warenkorb</strong></a>
                 </div>
             </section>
         </header>
         <!-- Ende Header -->
-        
+
         <!-- Hauptnavigation -->
         <section id="main-nav" class="row grid-center grid-middle">
             <nav>
@@ -91,7 +91,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="menu-item"><a href="#">Jungen-Mode</a></li>
+                    <li class="menu-item active"><a href="#">Jungen-Mode</a></li>
                     <li class="menu-item"><a href="#">Sommer-Mode</a></li>
                     <li class="menu-item"><a href="#">Made by FIT-Z</a></li>
                     <li class="menu-item"><a href="#">Weitere Kategorien</a>
@@ -154,16 +154,18 @@
 
 			<div class="row">
 				<div class="col-3 side-navigation">
-                     <div class="sidebar1 jsSidebar">
+                     <div class="sidebar">
                         <h4>Jungen-Mode</h4>
                         <ul class="level1">
-                            <li class="list-item open"><a href="#">Oberteile</a>
+                            <li class="list-item"><a href="#">Oberteile</a>
+                            </li>
+                            <li class="list-item open"><a href="#">Hosen</a>
                                 <ul class="level2">
-                                    <li class="list-item active"><a href="#">Langarm &amp; Hemden</a></li>
-                                    <li class="list-item"><a href="#">T-Shirts</a></li>
+                                    <li class="list-item active"><a href="#">Kurze Hosen</a></li>
+                                    <li class="list-item"><a href="#">Lange Hosen</a></li>
+                                    <li class="list-item"><a href="#">Jeans</a></li>
                                 </ul>
                             </li>
-                            <li class="list-item"><a href="#">Hosen</a></li>
                             <li class="list-item"><a href="#">Jacken &amp; Cardigans</a></li>
                             <li class="list-item"><a href="#">Festliche Mode</a></li>
                             <li class="list-item"><a href="#">Basics</a></li>
@@ -174,24 +176,6 @@
                             <li class="list-item"><a href="#">Wintersport</a></li>
                             <li class="list-item"><a href="#">Bademode</a></li>
                         </ul>
-                    </div>
-                    <style>
-                        .sidebarversion .active {
-                            background-color: grey;
-                            color: white;
-                        }
-                    </style>
-                    <div class="sidebarversion" style="padding-top:20px;">
-                        <h5>Sidebarversion auswählen</h5>
-                        <div class="jsVersion jsV1 active"style="display:inline-block; border:1px solid grey;padding:4px;cursor:pointer;">
-                            Version1
-                        </div>
-                        <div class="jsVersion jsV2"style="display:inline-block; border:1px solid grey;padding:4px;cursor:pointer;">
-                            Version2
-                        </div>
-                        <div class="jsVersion jsV3"style="display:inline-block; border:1px solid grey;padding:4px;cursor:pointer;">
-                            Version3
-                        </div>
                     </div>
 				</div>
 				<div class="col-9">
@@ -207,18 +191,20 @@
 								<option >Neu</option>
 							</select>
 						</div>
-					</div>	
+					</div>
 
 					<div class="row">
 						<div class="pue-filter col-12">
-							<select name="filter" id="filter" class="pue-filter-select">
-								<option value="filter">Filter</option>
-							</select>
+							<div id="filter">
+                                <div class="filter-txt">
+                                    Filter
+                                </div>
+                                <div class="filter-content">
+                                    <img src="img/filter.jpg" alt="Filter">
+                                </div>
+							</div>
 						</div>
 					</div>
-
-
-
 
 
 					<div class="row pue-content">
@@ -388,7 +374,7 @@
                         <div class="col-4 product-box">
                             <div class="pue-img">
                                 <a href="#"><img src="images/pue-03.jpg" alt=""></a>
-                               
+
                                 <div class="quickview">
                                     Schnellansicht
                                 </div>
@@ -404,7 +390,7 @@
                         <div class="col-4 product-box">
                             <div class="pue-img">
                                 <a href="#"><img src="images/pue-01.jpg" alt=""></a>
-                                
+
                                 <div class="quickview">
                                     Schnellansicht
                                 </div>
@@ -428,7 +414,7 @@
                                         <svg class="spinner" width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
                                        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
                                     </svg>
-                                </a>                                
+                                </a>
                             </div>
                             <div class="pue-p-name">
                                 <strong>Kapuzensweat -1-</strong>
@@ -440,7 +426,7 @@
 
 
 					</div>
-                    
+
                         <div class="col-4 product-box">
                             <div class="pue-img">
                                 <a href="#"><img src="images/pue-02.jpg" alt=""></a>
@@ -459,7 +445,7 @@
                         <div class="col-4 product-box">
                             <div class="pue-img">
                                 <a href="#"><img src="images/pue-03.jpg" alt=""></a>
-                               
+
                                 <div class="quickview">
                                     Schnellansicht
                                 </div>
@@ -475,7 +461,7 @@
                         <div class="col-4 product-box">
                             <div class="pue-img">
                                 <a href="#"><img src="images/pue-01.jpg" alt=""></a>
-                                
+
                                 <div class="quickview">
                                     Schnellansicht
                                 </div>
@@ -487,7 +473,7 @@
                                 17,99 €
                             </div>
                         </div>
-				
+
 				</div>
 			</div>
         </div>
@@ -530,13 +516,13 @@
                             <input type="text" placeholder="E-Mail-Adresse...">
                             <button type="submit" name="action" value="0">&rsaquo;</button>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="row custom-footer-content">
                     <div class="col-6">
                         <div class="footer-h">
-                            Topkategorien:
+                            Top-Kategorien:
                         </div>
                         <div class="row">
                             <ul class="col-3">
@@ -599,18 +585,7 @@
             </div>
         </div>
     </footer>
-    <div id="toTop">
-        <a href="#top">
-            <div class="circle">&rsaquo;</div>
-            <div class="txt">
-               Nach <br />
-            oben  
-            </div>           
-        </a>
-        
-    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/fn-main.js"></script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/fn-main.js"></script>
-
 </html>

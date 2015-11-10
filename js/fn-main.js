@@ -1,6 +1,5 @@
 
 $( document ).ready(function() {
-    
 	$('.pue-button').click(function() {
 		alert('lightbox');
 	});
@@ -30,26 +29,10 @@ $("a[href='#top']").click(function() {
 			$('#toTop').fadeOut();
 		}
 	});
-	
-	
 
-// Wechsel der Sidebars auf der PUE
 
-	$('.jsV1').click(function() {
-		$('.jsVersion').removeClass('active');
-		$(this).addClass('active');
-		$('.jsSidebar').removeClass().addClass('jsSidebar').addClass('sidebar1');
-	});
-
-	$('.jsV2').click(function() {
-		$('.jsVersion').removeClass('active');
-		$(this).addClass('active');
-		$('.jsSidebar').removeClass().addClass('jsSidebar').addClass('sidebar2');
-	});
-	$('.jsV3').click(function() {
-		$('.jsVersion').removeClass('active');
-		$(this).addClass('active');
-		$('.jsSidebar').removeClass().addClass('jsSidebar').addClass('sidebar3');
+	$('#filter .filter-txt').click(function() {
+		$(this).parent().toggleClass('active');
 	});
 
 

@@ -12,8 +12,10 @@
 		}
 	}
 }
-
-#header {		
+#logo {
+	transform: scale(0.9);
+}
+#header {
 	& > section {
 		padding-top:0;
 	}
@@ -23,8 +25,8 @@
 		& a {
 			padding-right: 2rem;
 		}
-		& strong {	
-			position:relative;		
+		& strong {
+			position:relative;
 			top:3px;
 			padding-left:10px;
 		}
@@ -32,16 +34,16 @@
 			position:relative;
 			text-decoration:none;
 			&:hover strong {
-				text-decoration:underline;				
+				text-decoration:underline;
 			}
 		}
 		& .cart-count-wrapper {
-			position:absolute;		
+			position:absolute;
 			top:-15px;
 			left:20px;
 			height:1.7em;
 			width:1.7em;
-			
+
 		}
 		& .cart-count {
 			background-color: $primary-color;
@@ -67,7 +69,7 @@
 			display:block;
 			float:right;
 			-webkit-appearance: none;
-		    -webkit-border-radius:0; 
+		    -webkit-border-radius:0;
 		    border-radius:0;
 			border:1px solid silver;
 			background-color:white;
@@ -82,15 +84,15 @@
 			border:none;
 			position: absolute;
 			right:5px;
-			top:50%;			
+			top:50%;
 			margin-top:-20px;
 			padding:0;
 			& img {
 				padding:10px;
 			}
 		}
-	} 
-	
+	}
+
 
 }
 /* Hauptnavi */
@@ -117,14 +119,20 @@
 		&:hover {
 			background-color: $primary-color;
 			& > a {
-				color:white; 				
+				color:white;
 			}
 			& .level2 {
 				  display: block;
-				  
+
 				  -webkit-animation-name: fadeInDownBig;
 				  animation-name: fadeInDownBig;
 			 }
+		}
+		&.active {
+			background-color: $primary-color;
+			& > a {
+				color:white;
+			}
 		}
 	}
 	.arrow {
@@ -146,7 +154,7 @@
 		}
 	}
 	/* Portrait */
-	@media only screen 
+	@media only screen
 	  and (max-width: 940px)  {
 			a {
 				font-size:0.8em;
@@ -165,7 +173,7 @@
 		overflow:hidden;
 		z-index:100;
 		@extend %box-shadow-standard;
-		
+
 		&.girls {
 			left:0;
 		}
@@ -207,27 +215,27 @@
 			display:inline-block;
 				padding:2px 0;
 			/* Portrait */
-			@media only screen 
+			@media only screen
 			  and (max-width: 940px)  {
 				padding:4px 0;
 				}
 		}
 		/* Portrait */
-		@media only screen 
+		@media only screen
 		  and (max-width: 940px)  {
 			width:600px;
-				
+
 		}
 		/* Portrait */
-		@media only screen 
+		@media only screen
 		  and (max-width: 700px)  {
 			width:500px;
-				
+
 		}
 	}
 	nav.service {
 		position:relative;
-		
+
 		&:before {
 			position:absolute;
 			display:block;
@@ -239,5 +247,5 @@
 			background-color:silver;
 		}
 	}
-	
+
 }
