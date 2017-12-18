@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Atelier Brokat</title>
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+        <meta name="ROBOTS" content="NOINDEX,NOFOLLOW">
+        <link href="assets/css/screen.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="assets/css/jquery.jqzoom.min.css" rel="stylesheet" type="text/css" media="all">
+        <!-- <script src="http://modernizr.com/downloads/modernizr-2.5.3.js"></script> -->
+    </head>
+    <body class="">       
+        <div class="wrapper"> 
+            <header>
+    <div id="logo"><img src="assets/img/logo.svg" alt="Atelier Brokat" height="95"></div> 
+    <nav class="clearfix">
+        <ul id="nav" class="clearfix schere">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="atelier.html">Atelier</a></li>
+            <li><a href="damen.html">Damen</a></li>
+            <li><a href="herren.html">Herren</a></li>
+            <li><a href="#">Bühnenproben</a></li>
+            <li><a href="#">Modetrends</a></li>
+            <li><a href="events.html">Veranstaltungen</a></li>
+        </ul>
+    </nav>
+</header>
+            <div class="content clearfix">
+                
+ 	<div class="banner" role="banner">	
+	<div class="hgroup impressum">
+		<h1>Atelier Brokat - Impressum</h1>
+	</div>
+	<div class="slider">
+		<ul class="slides">
+			<li><img src="images/impressum_slider01.jpg" alt=""></li>
+		</ul>
+	</div>
+</div>	
+<article class="impressum">
+	<section class="left">
+		<div class="shadow"><img src="images/impressum_content01.jpg" alt="" width="320" height="200"></div>
+	</section>
+	<section class="right">
+		<img height="100" alt="Atelier Brokat" src="assets/img/logo.svg">
+		<h4>Verantwortlich für diese Seiten:</h4> 
+		<p>André Bellmann / Prüfungsnummer: 3011<br>
+		Abschlussprüfung Mediengestalter <br>
+		Sommer 2013</p>
+		<strong>Aufgabenstellung:</strong>
+		<p>Zentral-Fachausschuss<br>
+		Berufsbildung Druck und Medien<br>
+		Wilhelmshöher Allee 260<br>
+		34131 Kassel</p>
+	</section>
+</article>
+
+            </div>
+            <footer>
+	<div class="is-uppercase logo">Atelier Brokat</div>
+	<ul>
+		<li><a href="#">Jobs</a></li>
+		<li><a href="#">Öffnungszeiten</a></li>
+		<li><a href="kontakt">Kontakt</a></li>
+		<li class="selected"><a href="impressum.html">Impressum</a></li>
+	</ul>
+</footer>
+        </div>
+        <script src="assets/js/jquery-1.6.js"></script>
+        <script src="assets/js/jquery.easing-1.3.min.js"></script>
+        <script src="assets/js/jquery.lavalamp.min.js"></script>  
+        <script src="assets/js/jquery.jqzoom-core.min.js"></script>   
+        <script type="text/javascript">
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+            }
+            $(function() {
+                $('ul#nav').lavaLamp();
+                 $('.jqzoom').jqzoom({
+                            zoomType: 'innerzoom',
+                            preloadImages: false,
+                            alwaysOn:false,
+                            title: false,
+                        });   
+            }); 
+        </script>  
+        <script src="assets/js/hashgrid.min.js"></script> 
+        <script src="assets/js/script.min.js"></script>
+        <script src="assets/js/jquery.flexslider.min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+          $(window).load(function() {
+            $('.slider').flexslider({slideshowSpeed: 4000,controlNav: false, directionNav: false,});  
+          });
+</script>
+    </body>
+</html>
