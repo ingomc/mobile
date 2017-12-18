@@ -12,28 +12,28 @@
                         <div class="row">
                             <div class="col-xs-12 new-shippingadress">
                                 <p>* Pflichtfeld</p>
-                                <input id="fieldspaymentAddressFormaxId" name="fields[paymentAddressForm][axId]" type="hidden" value="" />
-                                <input id="fieldspaymentAddressFormaddressId" name="fields[paymentAddressForm][addressId]" type="hidden" value="" />
-                                <input id="fieldspaymentAddressFormoriginalUid" name="fields[paymentAddressForm][originalUid]" type="hidden" value="" />
-                                <input id="fieldspaymentAddressFormnotExistingCustomer" name="fields[paymentAddressForm][notExistingCustomer]" type="hidden" value="true" />
-                                <input id="fieldspaymentAddressFormcountryIso" name="fields[paymentAddressForm][countryIso]" type="hidden" value="DE" />
-                                <input id="fieldspaymentAddressFormcountry" name="fields[paymentAddressForm][country]" type="hidden" value="Deutschland" />
-                                <input id="fieldspaymentAddressFormserviceArticle" name="fields[paymentAddressForm][serviceArticle]" type="hidden" value="false" />
+                                <input id="fieldspaymentAddressFormaxId" name="fields[paymentAddressForm][axId]" type="hidden" value="">
+                                <input id="fieldspaymentAddressFormaddressId" name="fields[paymentAddressForm][addressId]" type="hidden" value="">
+                                <input id="fieldspaymentAddressFormoriginalUid" name="fields[paymentAddressForm][originalUid]" type="hidden" value="">
+                                <input id="fieldspaymentAddressFormnotExistingCustomer" name="fields[paymentAddressForm][notExistingCustomer]" type="hidden" value="true">
+                                <input id="fieldspaymentAddressFormcountryIso" name="fields[paymentAddressForm][countryIso]" type="hidden" value="DE">
+                                <input id="fieldspaymentAddressFormcountry" name="fields[paymentAddressForm][country]" type="hidden" value="Deutschland">
+                                <input id="fieldspaymentAddressFormserviceArticle" name="fields[paymentAddressForm][serviceArticle]" type="hidden" value="false">
                                 <div id="i18nAddressForm" class="i18nAddressForm">
                                     <div class="form-group inline gender-switch-wrapper js-switchFormScopePaymentAddress" data-module="SwitchFormScope">
                                         <div class="gender-switch">
-                                            <input id="woman" name="fields[paymentAddressForm][customer]" data-formscope="customer" type="radio" value="true" checked="checked" />
+                                            <input id="woman" name="fields[paymentAddressForm][customer]" data-formscope="customer" type="radio" value="true" checked="checked">
                                             <label for="woman" class="btn"> Frau </label>
-                                            <input id="man" name="fields[paymentAddressForm][customer]" data-formscope="customer" type="radio" value="false" />
+                                            <input id="man" name="fields[paymentAddressForm][customer]" data-formscope="customer" type="radio" value="false">
                                             <label for="man" class="btn"> Herr </label>
-                                            <input id="company" name="fields[paymentAddressForm][customer]" data-formscope="company" type="radio" value="false" />
+                                            <input id="company" name="fields[paymentAddressForm][customer]" data-formscope="company" type="radio" value="false">
                                             <label for="company" class="btn company-switch"> Ich bin Firmenkunde </label>
                                         </div>
                                     </div>
                                     <div class="" data-form="company">
                                         <div class="form-group control-group">
-                                            <label class="control-label " for="address.company"> <span>Firma:</span> <span class="mandatory"> *</span> </label>
-                                            <input id="address.company" name="fields[paymentAddressForm][firstName]" class="form-control" type="text" value="" autocomplete="given-name" required="" data-parsley-errors-container="#companyerrors" data-parsley-error-message="Bitte Firmenname angeben" type="text" />
+                                            <label class="control-label" for="address.company"> <span>Firma:</span> <span class="mandatory"> *</span> </label>
+                                            <input id="address.company" name="fields[paymentAddressForm][firstName]" class="form-control" type="text" value="" autocomplete="given-name" required="" data-parsley-errors-container="#companyerrors" data-parsley-error-message="Bitte Firmenname angeben" type="text">
                                             <div class="help-block">
                                                 <span id="companyerrors"></span>
                                             </div>
@@ -41,8 +41,8 @@
                                     </div>
                                     <div class="" data-form="customer">
                                         <div class="form-group control-group">
-                                            <label class="control-label " for="address.firstName"> <span>Vorname:</span> <span class="mandatory"> *</span> </label>
-                                            <input id="address.firstName" name="fields[paymentAddressForm][firstName]" class="form-control" type="text" value="" autocomplete="given-name" required="" data-parsley-errors-container="#addressfirstNameerrors" data-parsley-error-message="Bitte Vorname angeben" type="text" />
+                                            <label class="control-label" for="address.firstName"> <span>Vorname:</span> <span class="mandatory"> *</span> </label>
+                                            <input id="address.firstName" name="fields[paymentAddressForm][firstName]" class="form-control" type="text" value="" autocomplete="given-name" required="" data-parsley-errors-container="#addressfirstNameerrors" data-parsley-error-message="Bitte Vorname angeben" type="text">
                                             <div class="help-block">
                                                 <span id="addressfirstNameerrors"></span>
                                             </div>
@@ -50,25 +50,25 @@
                                     </div>
                                     <div class="" data-form="customer">
                                         <div class="form-group control-group">
-                                            <label class="control-label " for="address.lastName"> <span>Nachname:</span> <span class="mandatory"> *</span> </label>
-                                            <input id="address.lastName" name="fields[paymentAddressForm][lastName]" class="form-control" type="text" value="" autocomplete="family-name" required="" data-parsley-errors-container="#addresslastNameerrors" data-parsley-error-message="Bitte Nachname angeben" type="text" />
+                                            <label class="control-label" for="address.lastName"> <span>Nachname:</span> <span class="mandatory"> *</span> </label>
+                                            <input id="address.lastName" name="fields[paymentAddressForm][lastName]" class="form-control" type="text" value="" autocomplete="family-name" required="" data-parsley-errors-container="#addresslastNameerrors" data-parsley-error-message="Bitte Nachname angeben" type="text">
                                             <div class="help-block">
                                                 <span id="addresslastNameerrors"></span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="" data-form="customer">
-                                        <div class="form-group control-group" >
-                                            <label class="control-label " for="address.dayOfBirth"> <span>Geburtsdatum (TT MM JJJJ)::</span> <span class="mandatory"> *</span> </label>
+                                        <div class="form-group control-group">
+                                            <label class="control-label" for="address.dayOfBirth"> <span>Geburtsdatum (TT MM JJJJ)::</span> <span class="mandatory"> *</span> </label>
                                             <div class="row" data-module="Autojump">
                                                 <div class="col-xs-4">
-                                                    <input id="address.dayOfBirth" name="fields[paymentAddressForm][dayOfBirth]" class="form-control" placeholder="TT" type="number" value="" min="1" max="31" autocomplete="bday-day" required="" data-parsley-error-message="Bitte Tag angeben" data-parsley-group="block1" />
+                                                    <input id="address.dayOfBirth" name="fields[paymentAddressForm][dayOfBirth]" class="form-control" placeholder="TT" type="number" value="" min="1" max="31" autocomplete="bday-day" required="" data-parsley-error-message="Bitte Tag angeben" data-parsley-group="block1">
                                                 </div>
                                                 <div class="col-xs-4">
-                                                    <input id="address.monthOfBirth" name="fields[paymentAddressForm][monthOfBirth]" class="form-control" placeholder="MM" type="number" value="" min="1" max="12" autocomplete="bday-month" data-parsley-group="block1" data-parsley-error-message="Bitte Monat angeben" required="" />
+                                                    <input id="address.monthOfBirth" name="fields[paymentAddressForm][monthOfBirth]" class="form-control" placeholder="MM" type="number" value="" min="1" max="12" autocomplete="bday-month" data-parsley-group="block1" data-parsley-error-message="Bitte Monat angeben" required="">
                                                 </div>
                                                 <div class="col-xs-4">
-                                                    <input id="address.yearOfBirth" name="fields[paymentAddressForm][yearOfBirth]" class="form-control" placeholder="J J J J" type="number" value="" min="1900" max="1999" autocomplete="bday-year" data-parsley-group="block1" data-parsley-error-message="Bitte Jahr angeben, sie müssen mindestens 18 Jahre alt sein" required="" />
+                                                    <input id="address.yearOfBirth" name="fields[paymentAddressForm][yearOfBirth]" class="form-control" placeholder="J J J J" type="number" value="" min="1900" max="1999" autocomplete="bday-year" data-parsley-group="block1" data-parsley-error-message="Bitte Jahr angeben, sie müssen mindestens 18 Jahre alt sein" required="">
                                                 </div>
                                             </div>
                                         </div>
@@ -76,8 +76,8 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-md-8">
                                             <div class="form-group control-group">
-                                                <label class="control-label " for="address.line1"> <span>Straße:</span> <span class="mandatory"> *</span> </label>
-                                                <input id="address.line1" name="fields[paymentAddressForm][line1]" class="form-control" value="" autocomplete="address-line1" required="" data-parsley-errors-container="#addressline1errors" data-parsley-error-message="Bitte Straße angeben" type="text" />
+                                                <label class="control-label" for="address.line1"> <span>Straße:</span> <span class="mandatory"> *</span> </label>
+                                                <input id="address.line1" name="fields[paymentAddressForm][line1]" class="form-control" value="" autocomplete="address-line1" required="" data-parsley-errors-container="#addressline1errors" data-parsley-error-message="Bitte Straße angeben" type="text">
                                                 <div class="help-block">
                                                     <span id="addressline1errors"></span>
                                                 </div>
@@ -85,8 +85,8 @@
                                         </div>
                                         <div class="col-xs-12 col-md-4">
                                             <div class="form-group control-group">
-                                                <label class="control-label " for="address.line2"> <span>Hausnummer:</span> <span class="mandatory"> *</span> </label>
-                                                <input id="address.line2" name="fields[paymentAddressForm][line2]" class="form-control" value="" autocomplete="address-line2" required="" data-parsley-errors-container="#addresslastline2errors" data-parsley-error-message="Hausnummer angeben" type="text" />
+                                                <label class="control-label" for="address.line2"> <span>Hausnummer:</span> <span class="mandatory"> *</span> </label>
+                                                <input id="address.line2" name="fields[paymentAddressForm][line2]" class="form-control" value="" autocomplete="address-line2" required="" data-parsley-errors-container="#addresslastline2errors" data-parsley-error-message="Hausnummer angeben" type="text">
                                                 <div class="help-block">
                                                     <span id="addresslastline2errors"></span>
                                                 </div>
@@ -97,13 +97,13 @@
                                         <div class="form-group control-group">
                                             <div>
                                                 <div class="js-toggle additional-address-infos" data-target=".jsAdress" data-status="inactive" data-hasfn="">
-                                                    <a href="#" class="u" onClick="return false;">+ Adresszusatz hinzufügen</a>
+                                                    <a href="#" class="u" onclick="return false">+ Adresszusatz hinzufügen</a>
                                                 </div>
                                             </div>
-                                            <div class="accordion-content-wrapper jsAdress" style="display: none;">
+                                            <div class="accordion-content-wrapper jsAdress" style="display: none">
 
-                                                <label class="control-label " for="address.supplement"> <span>Adresszusatz:</span> </label>
-                                                <input id="address.supplement" name="fields[paymentAddressForm][addressSupplement]" data-parsley-excluded="true" class="form-control" type="text" value="" />
+                                                <label class="control-label" for="address.supplement"> <span>Adresszusatz:</span> </label>
+                                                <input id="address.supplement" name="fields[paymentAddressForm][addressSupplement]" data-parsley-excluded="true" class="form-control" type="text" value="">
                                             </div>
                                         </div>
 
@@ -113,8 +113,8 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-md-4">
                                             <div class="form-group control-group">
-                                                <label class="control-label " for="address.postcode"> <span>Postleitzahl:</span> <span class="mandatory"> *</span> </label>
-                                                <input id="address.postcode" name="fields[paymentAddressForm][postcode]" class="form-control" type="number" min="0" max="99999" value="" autocomplete="postal-code"  required="" data-parsley-errors-container="#addresspostcodeerrors" data-parsley-error-message="PLZ angeben" />
+                                                <label class="control-label" for="address.postcode"> <span>Postleitzahl:</span> <span class="mandatory"> *</span> </label>
+                                                <input id="address.postcode" name="fields[paymentAddressForm][postcode]" class="form-control" type="number" min="0" max="99999" value="" autocomplete="postal-code" required="" data-parsley-errors-container="#addresspostcodeerrors" data-parsley-error-message="PLZ angeben">
                                                 <div class="help-block">
                                                     <span id="addresspostcodeerrors"></span>
                                                 </div>
@@ -122,8 +122,8 @@
                                         </div>
                                         <div class="col-xs-12 col-md-8">
                                             <div class="form-group control-group">
-                                                <label class="control-label " for="address.townCity"> <span>Stadt:</span> <span class="mandatory"> *</span> </label>
-                                                <input id="address.townCity" name="fields[paymentAddressForm][townCity]" class="form-control" type="text" value="" autocomplete="address-level2"  required="" data-parsley-errors-container="#addresstowncityerrors" data-parsley-error-message="Bitte Stadt angeben" />
+                                                <label class="control-label" for="address.townCity"> <span>Stadt:</span> <span class="mandatory"> *</span> </label>
+                                                <input id="address.townCity" name="fields[paymentAddressForm][townCity]" class="form-control" type="text" value="" autocomplete="address-level2" required="" data-parsley-errors-container="#addresstowncityerrors" data-parsley-error-message="Bitte Stadt angeben">
                                                 <div class="help-block">
                                                     <span id="addresstowncityerrors"></span>
                                                 </div>
@@ -131,11 +131,11 @@
                                         </div>
                                     </div>
                                     <div class="form-group control-group">
-                                        <label class="control-label " for="country"> <span>Land:</span> <span class="mandatory"> *</span> </label>
-                                        <input id="country" name="fields[paymentAddressForm][country]" class="form-control" type="text" disabled="disabled" value="Deutschland" />
+                                        <label class="control-label" for="country"> <span>Land:</span> <span class="mandatory"> *</span> </label>
+                                        <input id="country" name="fields[paymentAddressForm][country]" class="form-control" type="text" disabled="disabled" value="Deutschland">
                                     </div>
                                     <div class="form-group control-group">
-                                        <label class="control-label " for="address.email">
+                                        <label class="control-label" for="address.email">
                                            	<span>E-Mail-Adresse:</span>
                                         	<span class="mandatory">
                                     				*</span>
@@ -146,7 +146,7 @@
                                        </div>
                                     </div>
                                     <div class="form-group control-group">
-                                        <label class="control-label " for="tel.mobile">
+                                        <label class="control-label" for="tel.mobile">
                                            	<span>Telefon (Mobil):</span>
                                 		</label>
                                         <input id="tel.mobile" name="fields[paymentAddressForm][phone]" class="form-control" placeholder="0151 511731210" type="tel" data-parsley-errors-container="#telerrors" data-parsley-error-message="Bitte mobile Telefonnummer angeben" data-parsley-pattern="^[0\+]\d+$">
@@ -163,12 +163,11 @@
                     </div>
                 </div>
                 <div class="yCmsComponent">
-                    <input id="fieldsgeneralTermsConditionsFormvisible" name="fields[generalTermsConditionsForm][visible]" type="hidden" value="true" />
-                    <div class="formGroup ">
+                    <input id="fieldsgeneralTermsConditionsFormvisible" name="fields[generalTermsConditionsForm][visible]" type="hidden" value="true">
+                    <div class="formGroup">
                         <div class="formGroup-row">
-                            <div class="formGroup-item"> <span class="checkbox-wrap ">
-                    <input class="checkbox-elem " type="checkbox" id="accepted"
-						name="fields[generalTermsConditionsForm][accepted]" value="true" tabindex="" required="" data-parsley-errors-container="#addressacceptederrors" data-parsley-error-message="Bitte Datenschutz und AGB akzeptieren">
+                            <div class="formGroup-item"> <span class="checkbox-wrap">
+                    <input class="checkbox-elem" type="checkbox" id="accepted" name="fields[generalTermsConditionsForm][accepted]" value="true" tabindex="" required="" data-parsley-errors-container="#addressacceptederrors" data-parsley-error-message="Bitte Datenschutz und AGB akzeptieren">
 
                     <span class="checkbox-style"></span> </span>
                             </div>
@@ -208,7 +207,7 @@
                                     <div>94053 Musterstadt2</div>
                                     <a href="#" class="u" name="deleteHffAddressFromAddressBook" value="8797601398807" title="löschen">
                                         <span class="sprite -icon_remove">
-                                                        <svg viewBox="0 0 1 1" width="10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons.svg#icon_remove"></use></svg>
+                                                        <svg viewBox="0 0 1 1" width="10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons-39f292c110.svg#icon_remove"></use></svg>
                                                     </span><span>Löschen</span></a>
                                 </div>
                                 <div class="address-take">
@@ -250,11 +249,11 @@
 <div class="section-4">
     <div class="yCmsComponent">
         <div class="content" data-teaser="comp_00000BKW" data-content="Absatz">
-            <div class='ssl-container'>
+            <div class="ssl-container">
                 <span class="sprite -icon_lock">
-                    <svg viewBox="0 0 1 1" width="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons.svg#icon_lock"></use></svg>
+                    <svg viewBox="0 0 1 1" width="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/icons-39f292c110.svg#icon_lock"></use></svg>
                 </span>
-                <span class='ssl-text'>Ihre Daten werden durch SSL-Verschlüsselung sicher übertragen.</span>
+                <span class="ssl-text">Ihre Daten werden durch SSL-Verschlüsselung sicher übertragen.</span>
             </div>
         </div>
     </div>
